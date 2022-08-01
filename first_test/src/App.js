@@ -12,7 +12,6 @@ function App() {
 
 
   const shot = (e) => {
-    debugger;
     let num = e.target.innerHTML;
     let form;
     if (num === '1') {
