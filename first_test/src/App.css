@@ -1,0 +1,135 @@
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: rgb(38, 163, 151);
+  cursor: default;
+}
+
+body {
+  background-color: rgb(38, 163, 151);
+}
+
+.cursor {
+  color: #ec5990;
+  cursor: pointer;
+}
+
+.cursor:hover {
+  color: #bf1650;
+}
+
+
+
+.Circle {
+  border-radius: 50%;
+  width: 100px;
+  background-color: rgb(35, 52, 50);
+  height: 150px;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+.Circle:hover {
+
+  -webkit-animation: spin 8s linear infinite;
+  -moz-animation: spin 8s linear infinite;
+  animation: spin 8s linear infinite;
+}
+
+.Tochka {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 70px;
+}
+
+@-moz-keyframes spin {
+  50% { -moz-transform: rotate(120deg); }
+  100% {
+      -moz-transform: rotate(0deg);
+  }  
+}
+
+@-webkit-keyframes spin {
+  50% { -webkit-transform: rotate(120deg); }
+  100% {
+      -webkit-transform: rotate(0deg);
+  }  
+}
+
+@keyframes spin {
+  50% {
+      -webkit-transform: rotate(120deg);
+      transform: rotate(120deg);
+  }
+  100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+}
+
+
+
+
+
+/* //////// */
+
+
+select,
+input {
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  margin-right: 20px;
+  padding: 10px 0px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+
+label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background: #ec5990;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  width: 100%;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+}
+
+input[type="submit"]:hover {
+  background: #bf1650;
+  color: white;
+}
+
+input[type="submit"]:active {
+  transition: 0.3s all;
+  top: 2px;
+}
+
+
+/* ///////////// */
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+$rot: rote 2s linear infinite;
+$rot90: rotate(90deg);
+$rot0: rotate(0deg);
+
+.molot {
+    -webkit-animation: $rot;
+    -moz-animation: $rot;
+    animation: $rot;
+    transform-origin: bottom right;
+}
+  
+@-moz-keyframes rote {
+    50% {-moz-transform: $rot90; }
+    100% {-moz-transform: $rot0; }  
+}
+  
+@-webkit-keyframes rote {
+    50% {-webkit-transform: $rot90; }
+    100% {-webkit-transform: $rot0; }  
+}
+  
+@keyframes rote {
+    50% {
+        -webkit-transform: $rot90;
+        transform: $rot90;
+    }
+    100% {
+        -webkit-transform: $rot0;
+        transform: $rot0;
+    }
+}
+
+$gre: grey;
+$org: orange;
+$sevPx: 70px;
+$fivPx: 150px;
+$sixPx: 165px;
+$foPx: 400px;
+$pos: absolute;
+$dis: flex;
+$mar: auto;
+$bord: 2px solid black;
+
+
+.glav {
+    display: $dis;
+    height: 500px; 
+    margin: 60px 0px;
+}
+
+.molot {
+    width: 260px;
+    margin-left: $fivPx;
+    height: $foPx;
+    display: $dis;
+}
+
+.Ocnova {
+    height: 360px;
+    border: $bord;
+    margin: $mar;
+    margin-top: $mar;
+    background-color: $org;
+    width: $sevPx;
+}
+
+.lefTop {
+    width: $sixPx;
+    position: $pos;
+    height: $sevPx;
+    background-color: $gre;
+}
+
+.rigTop {
+    width: 90px; 
+    border-radius: 0 50% 50% 0 / 0 100% 100% 0;
+    margin-left: $sixPx;
+    position: $pos;
+    height: $sevPx;
+    background-color: $gre;
+}
+
+.blok {
+    height: 100px;
+    margin-left: $fivPx;
+    width: $foPx;
+    border: $bord;
+    background-color: $org;
+    margin-top: $mar;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
